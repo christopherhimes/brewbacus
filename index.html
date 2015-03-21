@@ -3,19 +3,38 @@
         <title>brewbacus</title>
         <style>
         body { background:#FFD700;}
-        h1 { font-family: "Trebuchet MS", Helvetica, sans-serif;color:white;text-align:center;font-size:2em; }
+        h1 { font-family: "Trebuchet MS", Helvetica, sans-serif;color:white;text-align:center;font-size:1.8em; }
         h2 { font-family: "Trebuchet MS", Helvetica, sans-serif;color:white;text-align:center;font-size:1.5em;padding:30px 0;  }        
         h3 { font-family: "Trebuchet MS", Helvetica, sans-serif;color:white;text-align:center;font-size:1em;}
         p { text-align:center; }
+        #logo { width:100%;max-width: 443px;}
+        #screen { width:100%;max-width: 300px;}
+        #main { width:70%;
+            margin:0 auto;
+            padding:30px;
+            min-width:450px;
+            max-width: 900px;
+        }
+        #left {
+            width:50%;
+            min-width: 300px;
+            float:left;
+        }
+        #right {
+            width:50%;
+            min-width: 300px;
+            float:left;
+            valign:top;
+        }
         </style>
         <link rel="icon" type="image/png" href="brewbacus.ico">
     </head>
     <body>
-        <div style="width:70%;margin:0 auto;padding:30px;text-align:center;">
-            <div style="width:50%;float:left;">
-                <img src="brewbacuslogowhite.png" />
+        <div id="main">
+            <div id="left">
+                <img id="logo" src="brewbacuslogowhite.png" />
                 <h1>
-                    - the Brewing Abacus -
+                    the Brewing Abacus
                 </h1>           
                 <h2>
                     A brewing calculator that will allow you to easily calculate the Alcohol By Volume or ABV percentage of your homebrew.
@@ -28,8 +47,8 @@
                         Copyright Christopher Himes 2015. <br/>All rights reserved.
                     </h3>
             </div>
-            <div style="width:50%;float:left;valign:top;">
-                <img src="screen.png" />
+            <div id="right">
+                <img id="screen" src="screen.png" />
             </div>
             <div>
                 
